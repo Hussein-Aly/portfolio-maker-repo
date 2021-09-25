@@ -168,19 +168,19 @@ def createSubjectSliceMidterm(student, subject):
     :param subject: takes subject object to pass its parameter to infoToReplace method
     :return: the results of infoToReplace
     """
-    if bool(subject.midterms.file_paths):
-        midterm_fill = Filler(grade=subject.midterms.grade, total=subject.midterms.total)
 
-        midterm_fill.infoToReplace(subject=subject, template_name='Autofill/Templates and pictures/Midterm Template.docx',
-                                   name=student.name, picture=student.picture_name,
-                                   program_name=student.program_name, academic_year=student.academic_year,
-                                   ID=student.ID, UEL_ID=student.UEL_ID, ASU_course_code=subject.ASU_course_code,
-                                   UEL_module_code=subject.UEL_module_code, ASU_course_name=subject.ASU_course_name,
-                                   UEL_module_name=subject.UEL_module_name, semester=subject.semester,
-                                   grade=subject.midterms.grade,
-                                   instructor_signature=subject.instructor_signature,
-                                   assistant_signature=subject.assistant_signature, num=1)
-        subject.midterms.file_paths.insert(0, f"Subjects/{subject.ASU_course_code}/midterm/MidtermCover1.pdf")
+    midterm_fill = Filler(grade=subject.midterms.grade, total=subject.midterms.total)
+
+    midterm_fill.infoToReplace(subject=subject, template_name='Autofill/Templates and pictures/Midterm Template.docx',
+                               name=student.name, picture=student.picture_name,
+                               program_name=student.program_name, academic_year=student.academic_year,
+                               ID=student.ID, UEL_ID=student.UEL_ID, ASU_course_code=subject.ASU_course_code,
+                               UEL_module_code=subject.UEL_module_code, ASU_course_name=subject.ASU_course_name,
+                               UEL_module_name=subject.UEL_module_name, semester=subject.semester,
+                               grade=subject.midterms.grade,
+                               instructor_signature=subject.instructor_signature,
+                               assistant_signature=subject.assistant_signature, num=1)
+    subject.midterms.file_paths.insert(0, f"Subjects/{subject.ASU_course_code}/midterm/MidtermCover1.pdf")
 
 
 def createSubjectSliceAssignments(student, subject):

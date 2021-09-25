@@ -337,6 +337,7 @@ class Screen4(Frame):
         self.section.file_paths = self.files
 
     def add_preview(self, path):
+        print(path)
         pages = convert_from_path(path, poppler_path="resources/poppler-0.68.0/bin", first_page=1, last_page=1)
         img = pages[0]
         img = img.resize((175, 248), Image.ANTIALIAS)

@@ -25,35 +25,35 @@ class Screen2(Frame):
             264.0, 439.5,
             image=self.entry0_img)
 
-        self.entry0 = Entry (
+        self.entry0 = Entry(
             bd=0,
             font=("Arial", 16, "normal"),
             bg="#dfdfdf",
             highlightthickness=0)
 
-        self.entry0.place (
+        self.entry0.place(
             x=115.0, y=415,
             width=298.0,
             height=47)
 
-        self.entry1_img = PhotoImage (file=f"resources/images/screen2/img_textBox1.png")
-        self.entry1_bg = self.canvas.create_image (
+        self.entry1_img = PhotoImage(file=f"resources/images/screen2/img_textBox1.png")
+        self.entry1_bg = self.canvas.create_image(
             1280.0, 470.0,
             image=self.entry1_img)
 
-        self.entry1 = Entry (
+        self.entry1 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry1.place (
+        self.entry1.place(
             x=1266.0, y=446,
             width=28.0,
             height=46)
 
-        self.entry2_img = PhotoImage (file=f"resources/images/screen2/img_textBox2.png")
-        self.entry2_bg = self.canvas.create_image (
+        self.entry2_img = PhotoImage(file=f"resources/images/screen2/img_textBox2.png")
+        self.entry2_bg = self.canvas.create_image(
             1280.0, 298.0,
             image=self.entry2_img)
 
@@ -63,269 +63,269 @@ class Screen2(Frame):
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry2.place (
+        self.entry2.place(
             x=1266.0, y=275,
             width=28.0,
             height=44)
 
-        self.entry3_img = PhotoImage (file=f"resources/images/screen2/img_textBox3.png")
-        self.entry3_bg = self.canvas.create_image (
+        self.entry3_img = PhotoImage(file=f"resources/images/screen2/img_textBox3.png")
+        self.entry3_bg = self.canvas.create_image(
             501.5, 440.5,
             image=self.entry3_img)
 
-        self.entry3 = Entry (
+        self.entry3 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry3.place (
+        self.entry3.place(
             x=466.0, y=417,
             width=71.0,
             height=45)
 
-        self.entry4_img = PhotoImage (file=f"resources/images/screen2/img_textBox4.png")
-        self.entry4_bg = self.canvas.create_image (
+        self.entry4_img = PhotoImage(file=f"resources/images/screen2/img_textBox4.png")
+        self.entry4_bg = self.canvas.create_image(
             625.5, 440.5,
             image=self.entry4_img)
 
-        self.entry4 = Entry (
+        self.entry4 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry4.place (
+        self.entry4.place(
             x=590.0, y=417,
             width=71.0,
             height=45)
 
-        self.entry5_img = PhotoImage (file=f"resources/images/screen2/img_textBox5.png")
-        self.entry5_bg = self.canvas.create_image (
+        self.entry5_img = PhotoImage(file=f"resources/images/screen2/img_textBox5.png")
+        self.entry5_bg = self.canvas.create_image(
             1280.0, 384.0,
             image=self.entry5_img)
 
-        self.entry5 = Entry (
+        self.entry5 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry5.place (
+        self.entry5.place(
             x=1266.0, y=362,
             width=28.0,
             height=42)
 
-        self.entry6_img = PhotoImage (file=f"resources/images/screen2/img_textBox6.png")
-        self.entry6_bg = self.canvas.create_image (
+        self.entry6_img = PhotoImage(file=f"resources/images/screen2/img_textBox6.png")
+        self.entry6_bg = self.canvas.create_image(
             1280.0, 552.0,
             image=self.entry6_img)
 
-        self.entry6 = Entry (
+        self.entry6 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry6.place (
+        self.entry6.place(
             x=1266.0, y=531,
             width=28.0,
             height=40)
 
-        self.entry7_img = PhotoImage (file=f"resources/images/screen2/img_textBox7.png")
-        self.entry7_bg = self.canvas.create_image (
+        self.entry7_img = PhotoImage(file=f"resources/images/screen2/img_textBox7.png")
+        self.entry7_bg = self.canvas.create_image(
             1280.0, 644.0,
             image=self.entry7_img)
 
-        self.entry7 = Entry (
+        self.entry7 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry7.place (
+        self.entry7.place(
             x=1266.0, y=623,
             width=28.0,
             height=40)
 
-        self.entry8_img = PhotoImage (file=f"resources/images/screen2/img_textBox8.png")
-        self.entry8_bg = self.canvas.create_image (
+        self.entry8_img = PhotoImage(file=f"resources/images/screen2/img_textBox8.png")
+        self.entry8_bg = self.canvas.create_image(
             1280.0, 728.0,
             image=self.entry8_img)
 
-        self.entry8 = Entry (
+        self.entry8 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry8.place (
+        self.entry8.place(
             x=1266.0, y=707,
             width=28.0,
             height=40)
 
-        self.entry9_img = PhotoImage (file=f"resources/images/screen2/img_textBox9.png")
-        self.entry9_bg = self.canvas.create_image (
+        self.entry9_img = PhotoImage(file=f"resources/images/screen2/img_textBox9.png")
+        self.entry9_bg = self.canvas.create_image(
             1280.0, 811.0,
             image=self.entry9_img)
 
-        self.entry9 = Entry (
+        self.entry9 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry9.place (
+        self.entry9.place(
             x=1266.0, y=790,
             width=28.0,
             height=40)
 
-        self.entry10_img = PhotoImage (file=f"resources/images/screen2/img_textBox10.png")
-        self.entry10_bg = self.canvas.create_image (
+        self.entry10_img = PhotoImage(file=f"resources/images/screen2/img_textBox10.png")
+        self.entry10_bg = self.canvas.create_image(
             1056.0, 296.5,
             image=self.entry10_img)
 
-        self.entry10 = Entry (
+        self.entry10 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry10.place (
+        self.entry10.place(
             x=907.0, y=272,
             width=298.0,
             height=47)
 
-        self.entry11_img = PhotoImage (file=f"resources/images/screen2/img_textBox11.png")
-        self.entry11_bg = self.canvas.create_image (
+        self.entry11_img = PhotoImage(file=f"resources/images/screen2/img_textBox11.png")
+        self.entry11_bg = self.canvas.create_image(
             1056.0, 386.0,
             image=self.entry11_img)
 
-        self.entry11 = Entry (
+        self.entry11 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry11.place (
+        self.entry11.place(
             x=907.0, y=362,
             width=298.0,
             height=46)
 
-        self.entry12_img = PhotoImage (file=f"resources/images/screen2/img_textBox12.png")
-        self.entry12_bg = self.canvas.create_image (
+        self.entry12_img = PhotoImage(file=f"resources/images/screen2/img_textBox12.png")
+        self.entry12_bg = self.canvas.create_image(
             1056.0, 469.5,
             image=self.entry12_img)
 
-        self.entry12 = Entry (
+        self.entry12 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry12.place (
+        self.entry12.place(
             x=907.0, y=445,
             width=298.0,
             height=47)
 
-        self.entry13_img = PhotoImage (file=f"resources/images/screen2/img_textBox13.png")
-        self.entry13_bg = self.canvas.create_image (
+        self.entry13_img = PhotoImage(file=f"resources/images/screen2/img_textBox13.png")
+        self.entry13_bg = self.canvas.create_image(
             1056.0, 553.5,
             image=self.entry13_img)
 
-        self.entry13 = Entry (
+        self.entry13 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry13.place (
+        self.entry13.place(
             x=907.0, y=529,
             width=298.0,
             height=47)
 
-        self.entry14_img = PhotoImage (file=f"resources/images/screen2/img_textBox14.png")
-        self.entry14_bg = self.canvas.create_image (
+        self.entry14_img = PhotoImage(file=f"resources/images/screen2/img_textBox14.png")
+        self.entry14_bg = self.canvas.create_image(
             264.0, 628.5,
             image=self.entry14_img)
 
-        self.entry14 = Entry (
+        self.entry14 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry14.place (
+        self.entry14.place(
             x=115.0, y=604,
             width=298.0,
             height=47)
 
-        self.entry15_img = PhotoImage (file=f"resources/images/screen2/img_textBox15.png")
-        self.entry15_bg = self.canvas.create_image (
+        self.entry15_img = PhotoImage(file=f"resources/images/screen2/img_textBox15.png")
+        self.entry15_bg = self.canvas.create_image(
             264.0, 718.5,
             image=self.entry15_img)
 
-        self.entry15 = Entry (
+        self.entry15 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry15.place (
+        self.entry15.place(
             x=115.0, y=694,
             width=298.0,
             height=47)
 
-        self.entry16_img = PhotoImage (file=f"resources/images/screen2/img_textBox16.png")
-        self.entry16_bg = self.canvas.create_image (
+        self.entry16_img = PhotoImage(file=f"resources/images/screen2/img_textBox16.png")
+        self.entry16_bg = self.canvas.create_image(
             1056.0, 643.5,
             image=self.entry16_img)
 
-        self.entry16 = Entry (
+        self.entry16 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry16.place (
+        self.entry16.place(
             x=907.0, y=619,
             width=298.0,
             height=47)
 
-        self.entry17_img = PhotoImage (file=f"resources/images/screen2/img_textBox17.png")
-        self.entry17_bg = self.canvas.create_image (
+        self.entry17_img = PhotoImage(file=f"resources/images/screen2/img_textBox17.png")
+        self.entry17_bg = self.canvas.create_image(
             1056.0, 729.5,
             image=self.entry17_img)
 
-        self.entry17 = Entry (
+        self.entry17 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry17.place (
+        self.entry17.place(
             x=907.0, y=705,
             width=298.0,
             height=47)
 
-        self.entry18_img = PhotoImage (file=f"resources/images/screen2/img_textBox18.png")
-        self.entry18_bg = self.canvas.create_image (
+        self.entry18_img = PhotoImage(file=f"resources/images/screen2/img_textBox18.png")
+        self.entry18_bg = self.canvas.create_image(
             1056.0, 810.5,
             image=self.entry18_img)
 
-        self.entry18 = Entry (
+        self.entry18 = Entry(
             bd=0,
             bg="#dfdfdf",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
-        self.entry18.place (
+        self.entry18.place(
             x=907.0, y=786,
             width=298.0,
             height=47)
 
-        self.img0 = PhotoImage (file=f"resources/images/screen2/img0.png")
-        self.img0_hover = PhotoImage (file="resources/images/screen2/img0_hover.png")
+        self.img0 = PhotoImage(file=f"resources/images/screen2/img0.png")
+        self.img0_hover = PhotoImage(file="resources/images/screen2/img0_hover.png")
 
         self.b0 = Label(
             image=self.img0,
@@ -333,7 +333,7 @@ class Screen2(Frame):
             highlightthickness=0,
             relief="flat")
 
-        self.b0.place (
+        self.b0.place(
             x=892, y=890,
             width=209,
             height=62)
@@ -341,8 +341,8 @@ class Screen2(Frame):
         self.changeOnHover(self.b0, self.img0_hover, self.img0)
         self.b0.bind("<Button-1>", lambda e: self.btn_clicked_add())
 
-        self.img1 = PhotoImage (file=f"resources/images/screen2/img1.png")
-        self.img1_hover = PhotoImage (file=f"resources/images/screen2/img1_hover.png")
+        self.img1 = PhotoImage(file=f"resources/images/screen2/img1.png")
+        self.img1_hover = PhotoImage(file=f"resources/images/screen2/img1_hover.png")
 
         self.b1 = Label(
             image=self.img1,
@@ -435,7 +435,8 @@ class Screen2(Frame):
         assignment = IC.Assignment(grade=assign_mark, total=assign_total)
         project = IC.Project(grade=project_mark, total=project_total)
         midterm = IC.Midterm(grade=mid_mark, total=mid_total)
-        if self.win.check_filled(asu_course_code, asu_course_name, uel_course_name, uel_course_code, instructor_name, ta_name, assign_mark):
+        if self.win.check_filled(asu_course_code, asu_course_name, uel_course_name, uel_course_code, instructor_name,
+                                 ta_name, assign_mark):
             self.entry0.delete(0, END)
             self.entry1.delete(0, END)
             self.entry2.delete(0, END)
@@ -478,9 +479,8 @@ class Screen2(Frame):
         else:
             tkinter.messagebox.showerror("Error", "Some fields are missing!!")
 
-
     def changeOnHover(self, button, colorOnHover, colorOnLeave):
-        button.bind ("<Enter>", func=lambda e: button.config(
+        button.bind("<Enter>", func=lambda e: button.config(
             image=colorOnHover))
-        button.bind ("<Leave>", func=lambda e: button.config(
+        button.bind("<Leave>", func=lambda e: button.config(
             image=colorOnLeave))
