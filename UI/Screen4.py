@@ -1,6 +1,7 @@
 import os
 import threading
 import tkinter.messagebox
+import webbrowser
 from tkinter import *
 from tkinter import ttk, filedialog
 from PIL import ImageTk, Image
@@ -48,7 +49,7 @@ class Screen4(Frame):
 
         self.background_img = PhotoImage(file=f"resources/images/screen4/background.png")
         self.background = self.canvas.create_image(
-            177.0, 86.0,
+            688.5, 86.0,
             image=self.background_img)
 
         self.img0 = PhotoImage(file=f"resources/images/screen4/img0.png")
@@ -80,7 +81,7 @@ class Screen4(Frame):
 
         self.img2 = PhotoImage (file=f"resources/images/screen4/img2.png")
         self.img2_hover = PhotoImage (file=f"resources/images/screen4/img2_hover.png")
-        self.b2 = Button (
+        self.b2 = Label(
             image=self.img2,
             borderwidth=0,
             highlightthickness=0,
@@ -95,7 +96,7 @@ class Screen4(Frame):
 
         self.img3 = PhotoImage(file=f"resources/images/screen4/img3.png")
         self.img3_hover = PhotoImage(file=f"resources/images/screen4/img3_hover.png")
-        self.b3 = Button(
+        self.b3 = Label(
             image=self.img3,
             borderwidth=0,
             highlightthickness=0,
@@ -110,7 +111,7 @@ class Screen4(Frame):
 
         self.img4 = PhotoImage(file=f"resources/images/screen4/img4.png")
         self.img4_hover = PhotoImage(file=f"resources/images/screen4/img4_hover.png")
-        self.b4 = Button(
+        self.b4 = Label(
             image=self.img4,
             borderwidth=0,
             highlightthickness=0,
@@ -125,13 +126,13 @@ class Screen4(Frame):
 
         self.img5 = PhotoImage (file=f"resources/images/screen4/img5.png")
         self.img5_hover = PhotoImage (file=f"resources/images/screen4/img5_hover.png")
-        self.b5 = Button (
+        self.b5 = Label(
             image=self.img5,
             borderwidth=0,
             highlightthickness=0,
             relief="flat")
 
-        self.b5.place (
+        self.b5.place(
             x=33, y=671,
             width=238,
             height=86)
@@ -140,7 +141,7 @@ class Screen4(Frame):
 
         self.img6 = PhotoImage (file=f"resources/images/screen4/img6.png")
         self.img6_hover = PhotoImage (file=f"resources/images/screen4/img6_hover.png")
-        self.b6 = Button (
+        self.b6 = Label(
             image=self.img6,
             borderwidth=0,
             highlightthickness=0,
@@ -153,8 +154,9 @@ class Screen4(Frame):
         self.b6.bind("<Button-1>", lambda e: self.initialize_new_section(self.window.current_subject.project))
 
         self.img7 = PhotoImage (file=f"resources/images/screen4/img7.png")
+
         self.entry0_img = PhotoImage (file=f"resources/images/screen4/img_textBox0.png")
-        self.entry0_bg = self.canvas.create_image (
+        self.entry0_bg = self.canvas.create_image(
             213.0, 185.0,
             image=self.entry0_img)
 
@@ -196,7 +198,7 @@ class Screen4(Frame):
             width=208,
             height=53)
 
-        self.b10.bind("<Button-1>", func=lambda e: self.window.merger_interface())
+        self.b10.bind("<Button-1>", func=lambda e: threading.Thread(target=self.window.merger_interface).start())
 
         self.img11 = PhotoImage (file=f"resources/images/screen4/img11.png")
         self.img11_hover = PhotoImage (file=f"resources/images/screen4/img10_hover.png")
@@ -244,6 +246,38 @@ class Screen4(Frame):
 
         self.b13.bind("<Button-1>", func=lambda e: self.switch_files())
 
+        self.img14 = PhotoImage(file=f"resources/images/screen4/img14.png")
+        self.img14_hover = PhotoImage(file=f"resources/images/screen4/img14_hover.png")
+        self.b14 = Label(
+            image=self.img14,
+            bg="#83568a",
+            borderwidth=0,
+            highlightthickness=0,
+            relief="flat")
+
+        self.b14.place(
+            x=1279, y=24,
+            width=50,
+            height=50)
+        self.b14.bind("<Button-1>", lambda e: self.openurl("https://github.com/SpadeQ22/portfolio-maker-repo/"))
+
+        self.img15 = PhotoImage(file=f"resources/images/screen4/img15.png")
+        self.img15_hover = PhotoImage(file=f"resources/images/screen4/img15_hover.png")
+        self.b15 = Label(
+            image=self.img15,
+            bg="#83568a",
+            borderwidth=0,
+            highlightthickness=0,
+            relief="flat")
+
+        self.b15.place(
+            x=1139, y=36,
+            width=100,
+            height=25)
+
+        self.b15.bind("<Button-1>", lambda e: self.openurl("https://www.linkedin.com/in/omaco2211/"))
+
+
         self.wrapper = LabelFrame(self.canvas)
         self.wrapper.pack(padx=405, pady=241)
         self.canvas2 = Canvas(self.wrapper, height=703, width=969, bg="#fff", highlightthickness=0,
@@ -271,11 +305,17 @@ class Screen4(Frame):
         self.changeOnHoverButtons (self.b11, self.img11_hover, self.img11)
         self.changeOnHoverButtons (self.b12, self.img12_hover, self.img12)
         self.changeOnHoverButtons(self.b13, self.img13_hover, self.img13)
+        self.changeOnHoverButtons(self.b14, self.img14_hover, self.img14)
+        self.changeOnHoverButtons(self.b15, self.img15_hover, self.img15)
+
 
         for subject in self.window.subjects:
             self.add_option(subject)
 
         self.initialize_new_subject()
+
+    def openurl(self, url):
+        webbrowser.open_new(url)
 
     def initialize_new_subject(self):
         self.entry0.delete(0, END)

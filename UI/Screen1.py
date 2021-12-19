@@ -1,13 +1,16 @@
 import os
 import tkinter.messagebox
+import webbrowser
 from tkinter import *
 from UI.Screen2 import Screen2
 from modifiers import InfoContainers as IC
-from tkinter import filedialog
+from tkinter import filedialog, ttk
+
 
 class Screen1(Frame):
 
     def __init__(self, window):
+
         Frame.__init__(self, window)
         self.win = window
         self.configure(bg="#83568a")
@@ -23,7 +26,7 @@ class Screen1(Frame):
 
         self.background_img = PhotoImage(file=f"resources/images/screen1/background.png")
         self.background = self.canvas.create_image(
-            557.5, 327.0,
+            776.5, 301.5,
             image=self.background_img)
 
         self.entry0_img = PhotoImage(file=f"resources/images/screen1/img_textBox0.png")
@@ -66,6 +69,7 @@ class Screen1(Frame):
         self.entry2 = Entry(
             bd=0,
             bg="#dfdfdf",
+            show="*",
             font=("Arial", 16, "normal"),
             highlightthickness=0)
 
@@ -164,7 +168,43 @@ class Screen1(Frame):
             font=("Arial", 10, "normal")
         )
         self.l1.place(x=380, y=695)
+        self.img14 = PhotoImage(file=f"resources/images/screen4/img14.png")
+        self.img14_hover = PhotoImage(file=f"resources/images/screen4/img14_hover.png")
+        self.b14 = Label(
+            image=self.img14,
+            bg="#83568a",
+            borderwidth=0,
+            highlightthickness=0,
+            relief="flat")
 
+        self.b14.place(
+            x=1279, y=24,
+            width=50,
+            height=50)
+        self.b14.bind("<Button-1>", lambda e: self.openurl("https://github.com/SpadeQ22/portfolio-maker-repo/"))
+
+        self.img15 = PhotoImage(file=f"resources/images/screen4/img15.png")
+        self.img15_hover = PhotoImage(file=f"resources/images/screen4/img15_hover.png")
+        self.b15 = Label(
+            image=self.img15,
+            bg="#83568a",
+            borderwidth=0,
+            highlightthickness=0,
+            relief="flat")
+
+        self.b15.place(
+            x=1139, y=36,
+            width=100,
+            height=25)
+
+        self.b15.bind("<Button-1>", lambda e: self.openurl("https://www.linkedin.com/in/omaco2211/"))
+
+        self.changeOnHover(self.b14, self.img14_hover, self.img14)
+        self.changeOnHover(self.b15, self.img15_hover, self.img15)
+
+
+    def openurl(self, url):
+        webbrowser.open_new(url)
 
     def choose_portfolio_image(self):
         name = filedialog.askopenfilename(filetypes=[('image files', '.png')])

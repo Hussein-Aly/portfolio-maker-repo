@@ -1,5 +1,7 @@
 import tkinter.messagebox
+import webbrowser
 from tkinter import *
+from tkinter import ttk
 
 from modifiers import InfoContainers as IC
 
@@ -20,6 +22,7 @@ class Screen2(Frame):
             relief="ridge")
         self.canvas.place(x=0, y=0)
 
+
         self.entry0_img = PhotoImage(file=f"resources/images/screen2/img_textBox0.png")
         self.entry0_bg = self.canvas.create_image(
             264.0, 439.5,
@@ -27,7 +30,7 @@ class Screen2(Frame):
 
         self.entry0 = Entry(
             bd=0,
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             bg="#dfdfdf",
             highlightthickness=0)
 
@@ -44,7 +47,7 @@ class Screen2(Frame):
         self.entry1 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry1.place(
@@ -60,7 +63,7 @@ class Screen2(Frame):
         self.entry2 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry2.place(
@@ -76,7 +79,7 @@ class Screen2(Frame):
         self.entry3 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry3.place(
@@ -92,7 +95,7 @@ class Screen2(Frame):
         self.entry4 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry4.place(
@@ -108,7 +111,7 @@ class Screen2(Frame):
         self.entry5 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry5.place(
@@ -124,7 +127,7 @@ class Screen2(Frame):
         self.entry6 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry6.place(
@@ -140,7 +143,7 @@ class Screen2(Frame):
         self.entry7 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry7.place(
@@ -156,7 +159,7 @@ class Screen2(Frame):
         self.entry8 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry8.place(
@@ -172,7 +175,7 @@ class Screen2(Frame):
         self.entry9 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry9.place(
@@ -188,7 +191,7 @@ class Screen2(Frame):
         self.entry10 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry10.place(
@@ -204,7 +207,7 @@ class Screen2(Frame):
         self.entry11 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry11.place(
@@ -220,7 +223,7 @@ class Screen2(Frame):
         self.entry12 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry12.place(
@@ -236,7 +239,7 @@ class Screen2(Frame):
         self.entry13 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry13.place(
@@ -252,7 +255,7 @@ class Screen2(Frame):
         self.entry14 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry14.place(
@@ -268,7 +271,7 @@ class Screen2(Frame):
         self.entry15 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry15.place(
@@ -284,7 +287,7 @@ class Screen2(Frame):
         self.entry16 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry16.place(
@@ -300,7 +303,7 @@ class Screen2(Frame):
         self.entry17 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry17.place(
@@ -316,7 +319,7 @@ class Screen2(Frame):
         self.entry18 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry18.place(
@@ -360,7 +363,7 @@ class Screen2(Frame):
 
         self.background_img = PhotoImage(file=f"resources/images/screen2/background.png")
         self.background = self.canvas.create_image(
-            669.5, 490.0,
+            688.5, 490.0,
             image=self.background_img)
 
         self.entry19_img = PhotoImage(file=f"resources/images/screen2/img_textBox19.png")
@@ -371,7 +374,7 @@ class Screen2(Frame):
         self.entry19 = Entry(
             bd=0,
             bg="#dfdfdf",
-            font=("Arial", 16, "normal"),
+            font=("Arial", 12, "normal"),
             highlightthickness=0)
 
         self.entry19.place(
@@ -379,6 +382,43 @@ class Screen2(Frame):
             width=298.0,
             height=47)
         self.fill_entries()
+
+        self.img14 = PhotoImage(file=f"resources/images/screen4/img14.png")
+        self.img14_hover = PhotoImage(file=f"resources/images/screen4/img14_hover.png")
+        self.b14 = Label(
+            image=self.img14,
+            bg="#83568a",
+            borderwidth=0,
+            highlightthickness=0,
+            relief="flat")
+
+        self.b14.place(
+            x=1279, y=24,
+            width=50,
+            height=50)
+        self.b14.bind("<Button-1>", lambda e: self.openurl("https://github.com/SpadeQ22/portfolio-maker-repo/"))
+
+        self.img15 = PhotoImage(file=f"resources/images/screen4/img15.png")
+        self.img15_hover = PhotoImage(file=f"resources/images/screen4/img15_hover.png")
+        self.b15 = Label(
+            image=self.img15,
+            bg="#83568a",
+            borderwidth=0,
+            highlightthickness=0,
+            relief="flat")
+
+        self.b15.place(
+            x=1139, y=36,
+            width=100,
+            height=25)
+
+        self.b15.bind("<Button-1>", lambda e: self.openurl("https://www.linkedin.com/in/omaco2211/"))
+
+        self.changeOnHover(self.b14, self.img14_hover, self.img14)
+        self.changeOnHover(self.b15, self.img15_hover, self.img15)
+
+    def openurl(self, url):
+        webbrowser.open_new(url)
 
     def fill_entries(self):
         if self.win.current_subject is not None:
@@ -405,8 +445,11 @@ class Screen2(Frame):
             self.entry19.insert(0, sub.UEL_module_name)
 
     def btn_clicked_done(self):
-        self.btn_clicked_add()
-        self.win.change_to_screen3()
+        correct = self.btn_clicked_add()
+        if correct:
+            self.win.change_to_screen3()
+        else:
+            return
 
     def btn_clicked_add(self):
         asu_course_name = self.entry0.get()
@@ -475,9 +518,11 @@ class Screen2(Frame):
                 index = self.win.subjects.index(self.win.current_subject)
                 self.win.subjects[index] = subject
                 self.win.current_subject = None
+            return True
 
         else:
             tkinter.messagebox.showerror("Error", "Some fields are missing!!")
+            return False
 
     def changeOnHover(self, button, colorOnHover, colorOnLeave):
         button.bind("<Enter>", func=lambda e: button.config(

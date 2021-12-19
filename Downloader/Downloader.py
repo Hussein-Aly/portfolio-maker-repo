@@ -42,7 +42,9 @@ class Downloader:
             token = re.findall("\w{32}", token[0])[0]
             payload = {'anchor': '', 'logintoken': token, 'username': login, 'password': password, 'rememberusername': 1}
             r_2 = s.post(url=url_domain + "/login/index.php", data=payload)
-            sessionStr = re.findall('"sesskey":"\w*',r_2.text )
+            sessionStr = re.findall('"sesskey":"\w*', r_2.text)
+            print(sessionStr)
+            print((re.split(':', sessionStr[0])))
             session_key = (re.split(':', sessionStr[0])[1])[1:]
             self.session = s
             self.session_key = session_key
